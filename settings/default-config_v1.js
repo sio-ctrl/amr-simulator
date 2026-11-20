@@ -1,0 +1,393 @@
+// js/config/default-config.js 를 이 파일로 교체하면 공장 기본값이 됨
+window.DEFAULT_CONFIG = {
+ "mapW": 40,
+ "mapH": 22,
+ "bg": null,
+ "nextId": 28,
+ "params": {
+  "amrCount": 3,
+  "speed": 0.3,
+  "dockT": 15,
+  "pioLoad": 5,
+  "pioUnload": 5,
+  "undockT": 10,
+  "rollerSpeed": 0.3,
+  "palletL": 1100,
+  "palletW": 100,
+  "palletH": 150,
+  "xferMargin": 0,
+  "lookAhead": 3,
+  "blockTimeout": 20,
+  "chargePio": 5,
+  "batRunH": 6,
+  "batChargeH": 2,
+  "minBat": 30,
+  "chargeTo": 50,
+  "payload": 1000,
+  "productKg": 500,
+  "simHours": 1,
+  "simSpeed": 30,
+  "prodH": 5,
+  "breakH": 1
+ },
+ "nodes": [
+  {
+   "id": 1,
+   "x": 5,
+   "y": 10,
+   "type": "path",
+   "name": "N1"
+  },
+  {
+   "id": 2,
+   "x": 5,
+   "y": 14,
+   "type": "path",
+   "name": "N2"
+  },
+  {
+   "id": 3,
+   "x": 10,
+   "y": 10,
+   "type": "path",
+   "name": "N3"
+  },
+  {
+   "id": 4,
+   "x": 10,
+   "y": 14,
+   "type": "path",
+   "name": "N4"
+  },
+  {
+   "id": 5,
+   "x": 15,
+   "y": 10,
+   "type": "path",
+   "name": "N5"
+  },
+  {
+   "id": 6,
+   "x": 15,
+   "y": 14,
+   "type": "path",
+   "name": "N6"
+  },
+  {
+   "id": 7,
+   "x": 20,
+   "y": 10,
+   "type": "path",
+   "name": "N7"
+  },
+  {
+   "id": 8,
+   "x": 20,
+   "y": 14,
+   "type": "path",
+   "name": "N8"
+  },
+  {
+   "id": 9,
+   "x": 25,
+   "y": 10,
+   "type": "path",
+   "name": "N9"
+  },
+  {
+   "id": 10,
+   "x": 25,
+   "y": 14,
+   "type": "path",
+   "name": "N10"
+  },
+  {
+   "id": 11,
+   "x": 30,
+   "y": 10,
+   "type": "path",
+   "name": "N11"
+  },
+  {
+   "id": 12,
+   "x": 30,
+   "y": 14,
+   "type": "path",
+   "name": "N12"
+  },
+  {
+   "id": 13,
+   "x": 35,
+   "y": 10,
+   "type": "path",
+   "name": "N13"
+  },
+  {
+   "id": 14,
+   "x": 35,
+   "y": 14,
+   "type": "path",
+   "name": "N14"
+  },
+  {
+   "id": 15,
+   "x": 10,
+   "y": 19,
+   "type": "charger",
+   "name": "C1"
+  },
+  {
+   "id": 16,
+   "x": 15,
+   "y": 19,
+   "type": "charger",
+   "name": "C2"
+  },
+  {
+   "id": 17,
+   "x": 20,
+   "y": 19,
+   "type": "charger",
+   "name": "C3"
+  },
+  {
+   "id": 18,
+   "x": 10,
+   "y": 5,
+   "type": "src",
+   "name": "PS1",
+   "t": 5,
+   "init": false
+  },
+  {
+   "id": 19,
+   "x": 15,
+   "y": 5,
+   "type": "sink",
+   "name": "PR1",
+   "t": 5,
+   "init": false
+  },
+  {
+   "id": 20,
+   "x": 25,
+   "y": 5,
+   "type": "lineIn",
+   "name": "LI1",
+   "t": 10,
+   "init": false
+  },
+  {
+   "id": 21,
+   "x": 30,
+   "y": 5,
+   "type": "lineOut",
+   "name": "LO1",
+   "t": 120,
+   "init": false
+  },
+  {
+   "id": 22,
+   "x": 35,
+   "y": 5,
+   "type": "lineIO",
+   "name": "LX1",
+   "t": 180,
+   "init": false
+  },
+  {
+   "id": 23,
+   "x": 4,
+   "y": 5,
+   "type": "cv",
+   "name": "CV1",
+   "t": 10,
+   "init": false
+  },
+  {
+   "id": 24,
+   "x": 7,
+   "y": 5,
+   "type": "cv",
+   "name": "CV2",
+   "t": 5,
+   "init": false
+  },
+  {
+   "id": 25,
+   "x": 27.5,
+   "y": 2,
+   "type": "cv",
+   "name": "CV3",
+   "t": 10,
+   "init": false
+  },
+  {
+   "id": 26,
+   "x": 15,
+   "y": 2,
+   "type": "cv",
+   "name": "CV4",
+   "t": 5,
+   "init": false
+  },
+  {
+   "id": 27,
+   "x": 19,
+   "y": 2,
+   "type": "cv",
+   "name": "CV5",
+   "t": 20,
+   "init": false
+  }
+ ],
+ "edges": [
+  {
+   "a": 1,
+   "b": 3
+  },
+  {
+   "a": 3,
+   "b": 5
+  },
+  {
+   "a": 5,
+   "b": 7
+  },
+  {
+   "a": 7,
+   "b": 9
+  },
+  {
+   "a": 9,
+   "b": 11
+  },
+  {
+   "a": 11,
+   "b": 13
+  },
+  {
+   "a": 4,
+   "b": 2
+  },
+  {
+   "a": 6,
+   "b": 4
+  },
+  {
+   "a": 8,
+   "b": 6
+  },
+  {
+   "a": 10,
+   "b": 8
+  },
+  {
+   "a": 12,
+   "b": 10
+  },
+  {
+   "a": 14,
+   "b": 12
+  },
+  {
+   "a": 13,
+   "b": 14
+  },
+  {
+   "a": 2,
+   "b": 1
+  },
+  {
+   "a": 15,
+   "b": 4
+  },
+  {
+   "a": 4,
+   "b": 15
+  },
+  {
+   "a": 16,
+   "b": 6
+  },
+  {
+   "a": 6,
+   "b": 16
+  },
+  {
+   "a": 17,
+   "b": 8
+  },
+  {
+   "a": 8,
+   "b": 17
+  },
+  {
+   "a": 18,
+   "b": 3
+  },
+  {
+   "a": 3,
+   "b": 18
+  },
+  {
+   "a": 19,
+   "b": 5
+  },
+  {
+   "a": 5,
+   "b": 19
+  },
+  {
+   "a": 20,
+   "b": 9
+  },
+  {
+   "a": 9,
+   "b": 20
+  },
+  {
+   "a": 21,
+   "b": 11
+  },
+  {
+   "a": 11,
+   "b": 21
+  },
+  {
+   "a": 22,
+   "b": 13
+  },
+  {
+   "a": 13,
+   "b": 22
+  }
+ ],
+ "cvs": [
+  {
+   "a": 23,
+   "b": 24
+  },
+  {
+   "a": 24,
+   "b": 18
+  },
+  {
+   "a": 20,
+   "b": 25
+  },
+  {
+   "a": 25,
+   "b": 21
+  },
+  {
+   "a": 19,
+   "b": 26
+  },
+  {
+   "a": 26,
+   "b": 27
+  }
+ ],
+ "links": []
+};
