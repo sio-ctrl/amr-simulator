@@ -10,6 +10,13 @@ ACS 맵·노드·스테이션·C/V를 드래그 앤 드롭으로 배치하고, A
 - **로컬**: `index.html`을 브라우저로 열면 됩니다.
 - **GitHub Pages**: 저장소 Settings → Pages → Branch `main` / `/ (root)` 선택 후 `https://<계정>.github.io/<저장소>/` 로 접속.
 
+### 세팅 공유 링크
+
+주소 뒤에 `?layout=<파일 경로>`를 붙이면 그 세팅으로 바로 열립니다 (GitHub Pages 등 웹 주소에서만 동작).
+
+- 현재 세팅: https://sio-ctrl.github.io/amr-simulator/?layout=settings/amr_layout.json
+- 다른 세팅을 공유하려면 `settings/` 폴더에 JSON을 넣고 push한 뒤 파일 이름만 바꿔서 링크를 보내면 됩니다.
+
 ## 주요 기능
 
 | 구분 | 내용 |

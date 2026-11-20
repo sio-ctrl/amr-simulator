@@ -12,5 +12,9 @@ function frame(ts) {
 S = loadDefault();
 applyState();
 setTool('select');
+// share link: index.html?layout=settings/amr_layout.json opens that layout (needs http(s), e.g. GitHub Pages; file:// blocks fetch)
+const shared = new URLSearchParams(location.search).get('layout');
+if (shared) fetch(shared).then(r => { if (!r.ok) throw new Error(r.status + ' ' + shared); loadJsonFile(r); })
+  .catch(e => alert('공유 레이아웃을 불러오지 못했습니다: ' + e.message));
 if (location.hash === '#test') selfTest();
 requestAnimationFrame(frame);
